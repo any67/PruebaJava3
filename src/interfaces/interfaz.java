@@ -4,11 +4,59 @@
  * and open the template in the editor.
  */
 package interfaces;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
  * @author LAB08
  */
-public class interfaz {
+public class interfaz 
+{
+   private static interfaz inter;//Objeto tipo Connection
+    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String USER = "root";
+    private static final String PASS = "";
+    private static final String URL = "jdbc:mysql://localhost:3306/PruebaJava3";
     
+     public interfaz()
+     {
+          inter = null;
+          
+           try
+           {
+             Class.forName(DRIVER);
+            inter = DriverManager.getConnection(URL, USER, PASS);
+            if (inter != null) 
+            {
+             System.out.println("Conexion Establecida");
+            }
+        }
+        catch(ClassNotFoundException | SQLException e)
+        {
+         System.out.println("Error en la Conexion");
+        }   
+           }
+      //PASO 13 - DEFINICION METODOS PARA CONECTAR Y DESCONECTAR
+    public Connection conectar()
+    {
+        return inter;//Retorna el objeto conex  
+    }
+    
+    public void desconectar()
+    {
+      inter=null;
+      
+        if (inter==null) 
+        {
+          System.out.println("Conexion Finalizada");
+        }
+     
+     
+     
+     
+     
+     
+     }
 }
