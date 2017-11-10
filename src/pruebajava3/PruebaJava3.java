@@ -5,9 +5,13 @@
  */
 package pruebajava3;
 
-/**
- *
+
+/********************************************************
+ *Any San Francisco
  * @author LAB08
+ * Fecha: Noviembre 10 de 2017
+ * Programa: PruebaJava3
+ * Responsabilidad:Clase Principal
  */
 public class PruebaJava3 {
 
