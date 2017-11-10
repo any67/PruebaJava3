@@ -29,7 +29,7 @@ public class conexionBD3  extends JFrame
    {
             panel = new JPanel();
    label = new JLabel();
-   text = new JTextField(20);
+   text = new JTextField(30);
     boton = new JButton();
     boton2 = new JButton();
     
@@ -40,7 +40,8 @@ public class conexionBD3  extends JFrame
     panel.add(boton);
     panel.add(boton2);
     
-    label.setText("Atributo");
+    label.setText("Tercera Evaluacion Sumativa");
+    label.setText("Base de Datos");
     boton.setText("Conectar");
     boton2.setText("Desconectar");
     panel.setBackground(Color.MAGENTA);
@@ -50,7 +51,7 @@ public class conexionBD3  extends JFrame
     {
         public void actionPerformed(ActionEvent evt)
         {
-            con = new ConexionBD();
+            con = new conexionBD3();
             Connection reg = con.conectar();
         }
     });

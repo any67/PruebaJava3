@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package pruebajava3;
+import interfaces.interfaz;
+import javax.swing.JFrame;
 
 
 /********************************************************
@@ -13,13 +15,19 @@ package pruebajava3;
  * Programa: PruebaJava3
  * Responsabilidad:Clase Principal
  */
-public class PruebaJava3 {
+public class PruebaJava3
+        
+{
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args)
+    {
+        Interfaz w = new interfaz();
+       w.setVisible(true);
+       w.setBounds(0, 0, 400, 400);
+       w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
