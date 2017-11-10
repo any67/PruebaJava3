@@ -27,7 +27,9 @@ public class interfaz
            try
            {
              Class.forName(DRIVER);
+             
             inter = DriverManager.getConnection(URL, USER, PASS);
+            
             if (inter != null) 
             {
              System.out.println("Conexion Establecida");
@@ -41,7 +43,7 @@ public class interfaz
       //PASO 13 - DEFINICION METODOS PARA CONECTAR Y DESCONECTAR
     public Connection conectar()
     {
-        return inter;//Retorna el objeto conex  
+        return inter; 
     }
     
     public void desconectar()
