@@ -24,7 +24,7 @@ public class PruebaJava3
      */
     public static void main(String[] args)
     {
-       interfaz w = new interfaz();
+    interfaz w = new interfaz();
        w.setVisible(true);
        w.setBounds(0, 0, 400, 400);
        w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
